@@ -40,6 +40,10 @@ const LoginPage = () => {
   };
 
   return (
+
+    <div className="h-full w-full flex items-center justify-center">
+       <div className="lg:min-w-[600px] sm:min-w-full sm:px-10">
+          
     <div className='border rounded-md p-20'>
       <h1 className='text-center text-3xl mb-10'>Login To <strong>Xgenious Support</strong></h1>
       <Form
@@ -83,6 +87,9 @@ const LoginPage = () => {
     </Form.Item>
   </Form>
     </div>
+       </div>
+    </div>
+    
   );
 };
 
