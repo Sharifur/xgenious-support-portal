@@ -3,7 +3,7 @@
 import React from 'react';
 import { DownOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Divider, Dropdown, Space } from 'antd';
+import { Col, Divider, Dropdown, Row, Space } from 'antd';
 
 import {
   AppstoreOutlined,
@@ -14,12 +14,15 @@ import {
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
-  HomeOutlined
+  HomeOutlined,
+  ArrowUpOutlined
 } from '@ant-design/icons';
 import { Layout, Menu, theme } from 'antd';
 import HeaderTop from '@/components/HeaderTop';
 import Image from 'next/image';
 import Link from 'next/link';
+import Card from 'antd/es/card/Card';
+import Statistic from 'antd/es/statistic/Statistic';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -33,16 +36,19 @@ const HomePage: React.FC = () => {
   return (
     <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
         <div style={{ padding: 24, textAlign: 'center', background: colorBgContainer }}>
-        <p>long content</p>
-        {
-            // indicates very long content
-            Array.from({ length: 100 }, (_, index) => (
-            <React.Fragment key={index}>
-                {index % 20 === 0 && index ? 'more' : '...'}
-                <br />
-            </React.Fragment>
-            ))
-        }
+            <Row gutter={15} className='mb-6'>
+                <Col span={12}>
+                    <Card bordered={false}>
+                        <Statistic title="Active Tickets" value={112893}  />
+                    </Card>
+                </Col>
+                <Col span={12}>
+                    <Card bordered={false}>
+                        <Statistic title="Closed Tickets" value={112893}  />
+                    </Card>
+                </Col>
+            </Row>
+            show a chart in full width
         </div>
     </Content>
   );
