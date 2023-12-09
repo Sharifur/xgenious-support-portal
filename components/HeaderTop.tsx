@@ -1,6 +1,6 @@
 
 import type { MenuProps } from 'antd';
-import { Avatar, Dropdown, Flex, Space } from 'antd';
+import { Alert, Avatar, Button, Dropdown, Flex, Space } from 'antd';
 import { Header } from 'antd/es/layout/layout';
 import { Layout, Menu, theme } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
@@ -41,14 +41,19 @@ const HeaderTop = () => {
             <div className={'px-5'}>
             <Flex align={"center"} justify={"space-between"}>
                 <span></span>
-                <Dropdown menu={{ items }} trigger={['click']}>
-                    <a onClick={(e) => e.preventDefault()}>
-                    <Space>
-                        <Avatar>Sh</Avatar> <span className='text-black'>Sharifur</span>
-                        <ChevronDown className='w-4 h-4 text-black'/>
-                    </Space>
-                    </a>
-                </Dropdown>
+                <div className='flex gap-4 items-center'>
+                  <Button type={"default"}>
+                    <Link href={"/new-ticket"}>New Ticket</Link>
+                  </Button>
+                  <Dropdown menu={{ items }} trigger={['click']}>
+                      <a onClick={(e) => e.preventDefault()}>
+                      <Space>
+                          <Avatar>Sh</Avatar> <span className='text-black'>Sharifur</span>
+                          <ChevronDown className='w-4 h-4 text-black'/>
+                      </Space>
+                      </a>
+                  </Dropdown>
+                </div>
             </Flex>
             </div>
         </Header>

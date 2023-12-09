@@ -23,6 +23,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Card from 'antd/es/card/Card';
 import Statistic from 'antd/es/statistic/Statistic';
+import TicketList from '@/components/TicketList';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -48,7 +49,9 @@ const HomePage: React.FC = () => {
                     </Card>
                 </Col>
             </Row>
-            show a chart in full width
+            <div className='mt-16'>
+              <TicketList title='Recently Opened Tickets' pagination={false}/>
+            </div>
         </div>
     </Content>
   );
