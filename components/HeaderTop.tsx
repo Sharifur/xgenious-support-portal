@@ -43,7 +43,7 @@ const HeaderTop = () => {
                 <span></span>
                 <div className='flex gap-4 items-center'>
                   <Button type={"default"}>
-                    <Link href={"/new-ticket"}>New Ticket</Link>
+                    <Link href={"/home/tickets/new"}>New Ticket</Link>
                   </Button>
                   <Dropdown menu={{ items }} trigger={['click']}>
                       <a onClick={(e) => e.preventDefault()}>

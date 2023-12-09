@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
                 </Col>
             </Row>
             <div className='mt-16'>
-              <TicketList title='Recently Opened Tickets' pagination={false}/>
+              <TicketList sorting={false} title='Recently Opened Tickets' pagination={false}/>
             </div>
         </div>
     </Content>
