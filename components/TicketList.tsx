@@ -31,7 +31,7 @@ const TicketList = ({title,pagination=false,sorting=false}: {
                 </Radio.Group>
             )}
             
-            <Space direction="vertical" size={16}>
+            <Space direction="vertical" size={16} className="w-full">
                 <TicketCard />
                 <TicketCard />
                 <TicketCard />

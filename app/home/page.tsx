@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
 
   return (
     <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-        <div style={{ padding: 24, textAlign: 'center', background: colorBgContainer }}>
+        <div style={{ padding: 24, background: colorBgContainer }}>
             <Row gutter={15} className='mb-6'>
                 <Col span={12}>
                     <Card bordered={false}>

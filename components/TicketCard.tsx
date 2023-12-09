@@ -5,8 +5,8 @@ const TicketCard = () => {
     return ( 
         <Card className="text-left mb-4">
             <div className="flex justify-between items-center gap-4">
-                <Link href={`/home/ticket/${12}`}>
-                    <h4 className="text-sm font-bold">
+                <Link href={`/home/tickets/${12}`}>
+                    <h4 className="text-sm font-bold text-black">
                         <span className="text-gray-500 mr-4">#12345</span>
                         Show notification if today is Friday/Saturday that we are on holiday 
                     </h4>
