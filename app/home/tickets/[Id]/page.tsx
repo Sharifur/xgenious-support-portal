@@ -1,5 +1,6 @@
 "use client";
 
+import Tiptap from '@/components/Tiptap';
 import { Alert, Avatar, Layout, Menu, theme } from 'antd';
 import Sider from 'antd/es/layout/Sider';
 const {Content } = Layout;
@@ -21,6 +22,10 @@ const TicketDetails = () => {
                             <Alert  message="This ticket has been closed two" showIcon type="warning" />
                         </div>
                         ticket details
+                        <div>
+                            ticket reply form 
+                            <Tiptap />
+                        </div>
                     </div>
                     <div className='bg-slate-50 w-2/5 p-6 border-l'>
                         <h3 className='text-xl mb-4'>Agent working on this tickets</h3>

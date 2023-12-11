@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 import {  ConfigProvider } from 'antd';
 
 import theme from '@/theme/themeConfig';
+import NextTopLoader from 'nextjs-toploader';
 
 export default function RootLayout({
   children,
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
       <ConfigProvider theme={theme}>
           <StyledComponentsRegistry>
+          <NextTopLoader />
           {children}
           </StyledComponentsRegistry>
       </ConfigProvider>
